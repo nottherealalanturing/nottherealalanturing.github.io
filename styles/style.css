@@ -38,7 +38,7 @@ ul {
   padding: 10px 24px;
 }
 
-.logo h4 {
+.logo {
   height: 20px;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -80,7 +80,7 @@ ul {
 }
 
 .headline {
-  height: 604px;
+  max-height: 604px;
   background-image: url("../assets//images/header-shapes\ mobile@2x.svg");
   background-position: top right;
   background-size: cover;
@@ -147,4 +147,5 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 12px;
 }
