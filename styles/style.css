@@ -11,6 +11,7 @@ ul {
   padding: 0;
   margin: 0;
 }
+
 .container {
   width: 100vw;
 }
@@ -39,15 +40,13 @@ ul {
 
 .logo h4 {
   height: 20px;
-  font-family: Poppins;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
-
   display: flex;
   align-items: center;
   text-align: center;
-
   color: #6070ff;
   flex: none;
   order: 0;
@@ -76,10 +75,6 @@ ul {
   height: 40px;
 }
 
-.mb-12 {
-  margin-bottom: 12;
-}
-
 .bg-c0 {
   background-color: #fff;
 }
@@ -98,7 +93,7 @@ ul {
 }
 
 .headline h1 {
-  font-family: Poppins;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -106,18 +101,16 @@ ul {
   display: flex;
   align-items: center;
   color: #172b4d;
-
   position: static;
   width: 327px;
   height: 150px;
   left: 24px;
-
   margin: 12px 0;
   order: 0;
 }
 
 .headline .desc {
-  font-family: Poppins;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -132,15 +125,13 @@ ul {
 }
 
 .headline .socials-text {
-  font-family: Poppins;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: #7f8cff;
-
   flex: none;
-  order: 0;
   flex-grow: 0;
   margin: 0;
   order: 2;
@@ -154,16 +145,6 @@ ul {
   order: 3;
   flex-grow: 0;
   display: flex;
-  gap: 0px;
   align-items: center;
   justify-content: space-between;
-}
-
-.socials-icons img {
-  list-style: none;
-  margin: 100px 0;
-}
-
-.medium-icon {
-  gap: 20px;
 }
