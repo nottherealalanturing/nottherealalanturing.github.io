@@ -1,0 +1,169 @@
+a,
+li,
+ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  width: 100vw;
+}
+
+.appbar {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 4;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+  top: 44px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 10px 24px;
+}
+
+.logo h4 {
+  height: 20px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #6070ff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: flex-start;
+  padding: 8px;
+}
+
+.nav-button {
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 10px 12px;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+}
+
+.mb-12 {
+  margin-bottom: 12;
+}
+
+.bg-c0 {
+  background-color: #fff;
+}
+
+.headline {
+  height: 604px;
+  background-image: url("../assets//images/header-shapes\ mobile@2x.svg");
+  background-position: top right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 114px 24px;
+  top: 92px;
+}
+
+.headline h1 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  color: #172b4d;
+
+  position: static;
+  width: 327px;
+  height: 150px;
+  left: 24px;
+
+  margin: 12px 0;
+  order: 0;
+}
+
+.headline .desc {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  width: 327px;
+  height: 146px;
+  left: 24px;
+  top: 276px;
+  margin: 12px 0;
+  order: 1;
+}
+
+.headline .socials-text {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0;
+  order: 2;
+}
+
+.socials-icons {
+  color: #505f79;
+  width: 170.17px;
+  height: 20px;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+  display: flex;
+  gap: 0px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.socials-icons img {
+  list-style: none;
+  margin: 100px 0;
+}
+
+.medium-icon {
+  gap: 20px;
+}
