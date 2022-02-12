@@ -361,7 +361,6 @@ body {
   align-items: center;
   color: #172b4d;
   flex: none;
-  order: 0;
   flex-grow: 0;
   margin: 12px 0;
 }
@@ -373,7 +372,6 @@ body {
   line-height: 24px;
   color: #344563;
   flex: none;
-  order: 1;
   flex-grow: 0;
   margin: 12px 0;
 }
