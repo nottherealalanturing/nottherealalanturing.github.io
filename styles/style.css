@@ -244,39 +244,25 @@ body {
 
 .tech-tags {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
-  padding: 0;
-  position: static;
-  width: 203px;
-  height: 24px;
-  left: 0;
-  top: 180px;
+  gap: 8px;
+  margin-bottom: 20px;
 }
 
-.tech-tags span {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 4px 12px;
-  background: #ebebff;
-  border-radius: 8px;
-  flex: none;
-  flex-grow: 0;
-  margin: 0 8px;
-}
-
-.tech-tag-name {
+.tech-tags-text {
+  color: #6070ff;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  color: #6070ff;
-  flex: none;
-  flex-grow: 0;
-  margin: 0;
+}
+
+.tech-tag-name {
+  border-radius: 8px;
+  background-color: #ebebff;
+  padding: 4px 12px;
 }
 
 .btn-container {
@@ -288,12 +274,32 @@ body {
 
 .view-project-btn {
   display: flex;
-  flex-direction: row;
   align-items: center;
   padding: 12px;
-  border: 1px solid #6070ff;
+  height: 48px;
+  background-color: #fff;
+  color: #6070ff;
+  border: 1px solid #7f8cff;
   box-sizing: border-box;
+  text-decoration: none;
   border-radius: 8px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  transition-property: background-color, color;
+  transition-duration: 500ms;
+}
+
+.view-project-btn:enabled {
+  border: 1px solid #7f8cff;
+  box-sizing: border-box;
+}
+.view-project-btn:hover {
+  background-color: #6070ff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  color: #fff;
+  cursor: pointer;
 }
 
 .view-project-btn p {
@@ -372,32 +378,29 @@ body {
 }
 
 .get-resume-btn {
-  flex-direction: row;
+  display: flex;
   align-items: center;
   padding: 12px;
-  border: 1px solid #6070ff;
+  height: 48px;
+  background-color: #fff;
+  color: #6070ff;
+  border: 1px solid #7f8cff;
   box-sizing: border-box;
+  text-decoration: none;
   border-radius: 8px;
-  flex: none;
-  order: 3;
-  flex-grow: 0;
-  margin: 12px 0;
-}
-
-.get-resume-btn-text {
-  font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.03em;
-  color: #396df2;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 0 10px;
+  transition-property: background-color, color;
+  transition-duration: 500ms;
+}
+
+.get-resume-btn:hover {
+  background-color: #6070ff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  color: #fff;
+  cursor: pointer;
 }
 
 .skill-list {
