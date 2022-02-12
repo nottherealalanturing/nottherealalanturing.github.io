@@ -120,7 +120,6 @@ body {
 }
 
 .headline .socials-text {
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -167,7 +166,6 @@ body {
 }
 
 .project-title {
-  font-family: "Poppins";
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -465,17 +463,6 @@ body {
 }
 
 .skill-item {
-  /* display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  border-radius: 8px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  background: #f7f7f9;
-  margin: 12px 0px;
-  gap: 16px; */
-
   display: flex;
   align-items: center;
   background-color: #f7f7f9;
@@ -486,14 +473,6 @@ body {
 
 .skill-item span {
   font-family: Poppins;
-  /* font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-  color: #253858; */
-
   padding: 16px;
   color: #253858;
   font-weight: 500;
