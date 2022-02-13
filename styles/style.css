@@ -16,7 +16,7 @@ body {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
-.mt-12 {
+.mt--12 {
   margin-top: 12px;
 }
 
@@ -32,7 +32,7 @@ body {
   z-index: 4;
 }
 
-.toolbar {
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,7 +40,7 @@ body {
   top: 44px;
 }
 
-.logo {
+.nav__logo {
   padding: 10px 24px;
   height: 20px;
   font-style: normal;
@@ -75,7 +75,7 @@ body {
   height: 40px;
 }
 
-.bg-c0 {
+.bg--c0 {
   background-color: #fff;
 }
 
@@ -107,7 +107,7 @@ body {
   margin: 12px 0;
 }
 
-.headline .desc {
+.headline__desc {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -120,7 +120,7 @@ body {
   margin: 12px 0;
 }
 
-.headline .socials-text {
+.socials-contact {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -165,7 +165,7 @@ body {
   flex-grow: 0;
 }
 
-.project-title {
+.portfolio-item__title {
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -176,7 +176,7 @@ body {
   margin: 12px 0;
 }
 
-.project-role {
+.portfolio-item__det {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -186,7 +186,7 @@ body {
   margin: 12px 0;
 }
 
-.project-role img {
+.portfolio-item__det img {
   position: static;
   width: 8px;
   height: 8px;
@@ -198,7 +198,7 @@ body {
   margin: 0 12px;
 }
 
-.project-role .client {
+.portfolio-item__det .project-owner {
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -209,7 +209,7 @@ body {
   margin: 0;
 }
 
-.project-role .role {
+.portfolio-item__det .project-type {
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -220,7 +220,7 @@ body {
   margin: 0;
 }
 
-.project-role .year {
+.portfolio-item__det .year {
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -231,7 +231,7 @@ body {
   margin: 0;
 }
 
-.description-text {
+.portfolio-item__description {
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -250,7 +250,7 @@ body {
   margin-bottom: 20px;
 }
 
-.tech-tags-text {
+.tech-tags__text {
   color: #6070ff;
   font-style: normal;
   font-weight: 500;
@@ -259,7 +259,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.tech-tag-name {
+.tech-tags__name {
   border-radius: 8px;
   background-color: #ebebff;
   padding: 4px 12px;
@@ -408,7 +408,7 @@ body {
   margin: 24px 0;
 }
 
-.skill-li {
+.skill-list__li {
   border-bottom: solid 1px #dfe1e6;
 }
 
@@ -469,6 +469,6 @@ body {
   width: 50%;
 }
 
-.acc-active {
+.active {
   display: block;
 }
