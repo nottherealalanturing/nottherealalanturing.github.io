@@ -243,7 +243,7 @@ body {
 }
 
 .tech-tags {
-  display: flex;
+  display: block;
   flex-wrap: wrap;
   align-items: center;
   gap: 8px;
@@ -260,6 +260,8 @@ body {
 }
 
 .tech-tags__name {
+  float: left;
+  margin-right: 10px;
   border-radius: 8px;
   background-color: #ebebff;
   padding: 4px 12px;
