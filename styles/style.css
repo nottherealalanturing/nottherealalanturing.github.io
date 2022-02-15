@@ -474,3 +474,49 @@ body {
 .active {
   display: block;
 }
+
+.contact-section {
+  background: #fff;
+}
+
+.contact-me {
+  background-image: url("../assets/images/contact-form-bg.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background: #6070ff;
+  border-radius: 50px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.contact-me > h2 {
+  margin-top: 10px;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 52px;
+  color: #fff;
+}
+
+.contact-me > p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+}
+
+.contact-me > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+}
