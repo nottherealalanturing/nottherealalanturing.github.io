@@ -45,6 +45,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 15px;
 }
 
 .nav__logo {
@@ -66,6 +67,10 @@ body {
   display: flex;
   align-items: flex-start;
   padding: 8px;
+}
+
+.nav-d {
+  display: none;
 }
 
 .nav-button {
@@ -565,6 +570,25 @@ form > button {
     margin-right: 142px;
   }
 
+  .nav-d {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+  }
+
+  .nav-d__item {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+  }
+
+  .nav-button {
+    display: none;
+  }
+
   .headline {
     background-image: url("../assets//images/hero-desktop.svg");
     background-position: top right;
@@ -600,12 +624,21 @@ form > button {
     padding: 114px 24px;
   }
 
-  .portfolio-item {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    padding: 24px;
+  .portfolio-item:nth-child(odd) {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: flex-start;
+    padding: 48px;
+    margin-bottom: 142px;
+  }
+
+  .portfolio-item:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 48px;
     margin-bottom: 142px;
   }
 
