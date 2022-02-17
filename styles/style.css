@@ -45,7 +45,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: auto;
 }
 
 .nav__logo {
@@ -600,6 +599,7 @@ form > button {
     justify-content: center;
     padding: 114px 24px;
   }
+
   .portfolio-item {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -608,6 +608,7 @@ form > button {
     align-items: flex-start;
     margin-bottom: 142px;
   }
+
   picture > img {
     width: 100%;
   }
@@ -626,12 +627,11 @@ form > button {
     font-size: 40px;
     line-height: 52px;
     color: #091e42;
-    margin: 12px 0px;
+    margin: 12px 0;
   }
 
   .project-year,
   .project-type {
-    font-family: Poppins;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -653,8 +653,9 @@ form > button {
     font-size: 16px;
     line-height: 24px;
     color: #344563;
-    margin: 24px 0px;
+    margin: 24px 0;
   }
+
   .btn-container {
     margin-top: 52px;
   }
