@@ -119,8 +119,6 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #7f8cff;
-  flex: none;
-  flex-grow: 0;
   margin: 0;
 }
 
@@ -164,8 +162,6 @@ body {
   font-size: 32px;
   line-height: 44px;
   color: #172b4d;
-  flex: none;
-  flex-grow: 0;
   margin: 12px 0;
 }
 
@@ -174,8 +170,6 @@ body {
   flex-direction: row;
   align-items: center;
   padding: 0;
-  flex: none;
-  flex-grow: 0;
   margin: 12px 0;
 }
 
@@ -186,8 +180,6 @@ body {
   left: 67px;
   top: 12px;
   background: #c1c7d0;
-  flex: none;
-  flex-grow: 0;
   margin: 0 12px;
 }
 
@@ -566,6 +558,7 @@ form > button {
     background-repeat: no-repeat;
     padding-left: 260px;
     padding-right: 260px;
+    padding-bottom: 255px;
   }
 
   .headline h1 {
@@ -586,16 +579,64 @@ form > button {
     color: #344563;
   }
 
-  /* .headline {
-    max-height: 604px;
-    background-image: url("../assets//images/header-shapes\ mobile@2x.svg");
-    background-position: top right;
-    background-size: cover;
-    background-repeat: no-repeat;
+  .headline .socials-contact {
+    margin-top: 12px;
+  }
+
+  .portfolio-item {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 24px;
+    justify-content: center;
+    margin-bottom: 142px;
+  }
+  .portfolio-item > img {
+    width: 100%;
+  }
+
+  .portfolio-item__not-image {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 114px 24px;
-    top: 92px;
-  } */
+    justify-content: flex-start;
+    padding: 0 24px 0 24px;
+  }
+
+  .portfolio-item__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 52px;
+    color: #091e42;
+    margin: 12px 0px;
+  }
+
+  .project-year,
+  .project-type {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #6b778c;
+  }
+
+  .project-owner {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  .portfolio-item__description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+    margin: 24px 0px;
+  }
+  .btn-container {
+    margin-top: 52px;
+  }
 }
