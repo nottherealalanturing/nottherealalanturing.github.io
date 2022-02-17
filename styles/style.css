@@ -17,8 +17,16 @@ body {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
+.mt--24 {
+  margin-top: 24px;
+}
+
 .mt--12 {
   margin-top: 12px;
+}
+
+.mb--12 {
+  margin-bottom: 12px;
 }
 
 .container {
@@ -37,8 +45,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 48px;
-  top: 44px;
+  padding: 15px;
 }
 
 .nav__logo {
@@ -62,6 +69,10 @@ body {
   padding: 8px;
 }
 
+.nav-d {
+  display: none;
+}
+
 .nav-button {
   flex: none;
   flex-grow: 0;
@@ -82,7 +93,7 @@ body {
 
 .headline {
   max-height: 604px;
-  background-image: url("../assets//images/header-shapes\ mobile@2x.svg");
+  background-image: url("../assets//images/hero-mobile.svg");
   background-position: top right;
   background-size: cover;
   background-repeat: no-repeat;
@@ -101,10 +112,6 @@ body {
   display: flex;
   align-items: center;
   color: #172b4d;
-  position: static;
-  width: 327px;
-  height: 150px;
-  left: 24px;
   margin: 12px 0;
 }
 
@@ -114,10 +121,6 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #344563;
-  width: 327px;
-  height: 146px;
-  left: 24px;
-  top: 276px;
   margin: 12px 0;
 }
 
@@ -127,8 +130,6 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #7f8cff;
-  flex: none;
-  flex-grow: 0;
   margin: 0;
 }
 
@@ -146,7 +147,7 @@ body {
 .portfolio-item {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
   padding: 16px;
   background: #fff;
@@ -158,7 +159,14 @@ body {
   margin: 88px 0;
 }
 
-.portfolio-item img {
+.portfolio-item__card-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 24px 0 24px;
+}
+
+picture > img {
   left: 16px;
   top: 16px;
   border-radius: 8px;
@@ -172,8 +180,6 @@ body {
   font-size: 32px;
   line-height: 44px;
   color: #172b4d;
-  flex: none;
-  flex-grow: 0;
   margin: 12px 0;
 }
 
@@ -182,8 +188,6 @@ body {
   flex-direction: row;
   align-items: center;
   padding: 0;
-  flex: none;
-  flex-grow: 0;
   margin: 12px 0;
 }
 
@@ -194,8 +198,6 @@ body {
   left: 67px;
   top: 12px;
   background: #c1c7d0;
-  flex: none;
-  flex-grow: 0;
   margin: 0 12px;
 }
 
@@ -325,6 +327,7 @@ body {
   display: grid;
   grid-template-columns: auto;
   padding: 114px 24px;
+  justify-content: center;
 }
 
 .about-section {
@@ -556,4 +559,165 @@ form > button {
   line-height: 24px;
   color: #6070ff;
   margin-bottom: 45px;
+}
+
+@media only screen and (min-width: 992px) {
+  .nav__logo {
+    margin-left: 142px;
+  }
+
+  .nav .navbar {
+    margin-right: 142px;
+  }
+
+  .nav-d {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+  }
+
+  .nav-d__item {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+  }
+
+  .nav-button {
+    display: none;
+  }
+
+  .headline {
+    background-image: url("../assets//images/hero-desktop.svg");
+    background-position: top right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5% 25% 8% 25%;
+  }
+
+  .headline h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    align-items: center;
+    letter-spacing: 0.37px;
+    color: #091e42;
+  }
+
+  .headline__desc {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    color: #344563;
+  }
+
+  .headline .socials-contact {
+    margin-top: 12px;
+  }
+
+  .work-section {
+    justify-content: center;
+    padding: 114px 24px;
+  }
+
+  .portfolio-item:nth-child(odd) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 48px;
+    margin-bottom: 142px;
+  }
+
+  .portfolio-item:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 48px;
+    margin-bottom: 142px;
+  }
+
+  picture > img {
+    width: 100%;
+  }
+
+  .portfolio-item__card-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 24px 0 24px;
+  }
+
+  .portfolio-item__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 52px;
+    color: #091e42;
+    margin: 12px 0;
+  }
+
+  .project-year,
+  .project-type {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #6b778c;
+  }
+
+  .project-owner {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  .portfolio-item__description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+    margin: 24px 0;
+  }
+
+  .btn-container {
+    margin-top: 52px;
+  }
+
+  .about-section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 142px;
+  }
+
+  .about-section h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 52px;
+    display: flex;
+    align-items: center;
+    color: #091e42;
+  }
+
+  .about-top {
+    gap: 12px;
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  .contact-me {
+    padding: 10% 25%;
+    border-top-left-radius: 160px;
+    background-image: url("../assets/images/footer-bg.svg");
+  }
 }
