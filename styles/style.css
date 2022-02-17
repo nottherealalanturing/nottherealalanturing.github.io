@@ -136,7 +136,7 @@ body {
 .portfolio-item {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
   padding: 16px;
   background: #fff;
@@ -148,7 +148,14 @@ body {
   margin: 88px 0;
 }
 
-.portfolio-item img {
+.portfolio-item__card-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 24px 0 24px;
+}
+
+picture > img {
   left: 16px;
   top: 16px;
   border-radius: 8px;
@@ -309,6 +316,7 @@ body {
   display: grid;
   grid-template-columns: auto;
   padding: 114px 24px;
+  justify-content: center;
 }
 
 .about-section {
@@ -582,7 +590,9 @@ form > button {
   .headline .socials-contact {
     margin-top: 12px;
   }
-
+  .work-section {
+    justify-content: center;
+  }
   .portfolio-item {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -590,11 +600,11 @@ form > button {
     justify-content: center;
     margin-bottom: 142px;
   }
-  .portfolio-item > img {
+  picture > img {
     width: 100%;
   }
 
-  .portfolio-item__not-image {
+  .portfolio-item__card-details {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
