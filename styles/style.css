@@ -82,7 +82,7 @@ body {
 
 .headline {
   max-height: 604px;
-  background-image: url("../assets//images/header-shapes\ mobile@2x.svg");
+  background-image: url("../assets//images/hero-mobile.svg");
   background-position: top right;
   background-size: cover;
   background-repeat: no-repeat;
@@ -101,10 +101,6 @@ body {
   display: flex;
   align-items: center;
   color: #172b4d;
-  position: static;
-  width: 327px;
-  height: 150px;
-  left: 24px;
   margin: 12px 0;
 }
 
@@ -114,10 +110,6 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #344563;
-  width: 327px;
-  height: 146px;
-  left: 24px;
-  top: 276px;
   margin: 12px 0;
 }
 
@@ -556,4 +548,54 @@ form > button {
   line-height: 24px;
   color: #6070ff;
   margin-bottom: 45px;
+}
+
+@media only screen and (min-width: 992px) {
+  .nav__logo {
+    margin-left: 142px;
+  }
+
+  .navbar {
+    margin-right: 142px;
+  }
+
+  .headline {
+    background-image: url("../assets//images/hero-desktop.svg");
+    background-position: top right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 260px;
+    padding-right: 260px;
+  }
+
+  .headline h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    align-items: center;
+    letter-spacing: 0.37px;
+    color: #091e42;
+  }
+
+  .headline__desc {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    color: #344563;
+  }
+
+  /* .headline {
+    max-height: 604px;
+    background-image: url("../assets//images/header-shapes\ mobile@2x.svg");
+    background-position: top right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 114px 24px;
+    top: 92px;
+  } */
 }
