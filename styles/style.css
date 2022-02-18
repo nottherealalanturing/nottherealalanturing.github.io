@@ -624,8 +624,13 @@ form > button {
     margin-bottom: 142px;
   }
 
-  picture > img {
+  .portfolio-item__image {
     width: 100%;
+  }
+
+  .portfolio-item__image:hover {
+    transform: scale(1.2);
+    transition: all 1s;
   }
 
   .portfolio-item__card-details {
