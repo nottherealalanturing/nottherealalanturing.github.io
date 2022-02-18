@@ -702,4 +702,27 @@ form > button {
     border-top-left-radius: 160px;
     background-image: url("../assets/images/footer-bg.svg");
   }
+
+  .nav__logo {
+    animation-duration: 4s;
+    animation-name: rotate-logo;
+  }
+
+  @keyframes rotate-logo {
+    from {
+      transform: rotate(0deg);
+    }
+
+    60% {
+      transform: rotate(360deg);
+    }
+
+    90% {
+      transform: scale(2);
+    }
+
+    to {
+      transform: scale(1);
+    }
+  }
 }
