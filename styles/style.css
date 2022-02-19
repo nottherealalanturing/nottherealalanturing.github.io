@@ -734,6 +734,15 @@ form > button {
     background-image: url("../assets/images/footer-bg.svg");
   }
 
+  form > button {
+    transition: background-color 1s, color 1s;
+  }
+
+  form > button:hover {
+    background-color: #7f8cff;
+    color: #fff;
+  }
+
   .nav__logo {
     animation-duration: 4s;
     animation-name: rotate-logo;
