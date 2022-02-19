@@ -623,6 +623,15 @@ form > button {
     margin-bottom: 142px;
   }
 
+  .view-project-btn{
+    transition: background-color 1gits, color 1.5s;
+  }
+
+  .view-project-btn:hover{
+    background-color: #7f8cff;
+    color: #fff;
+  }
+
   .portfolio-item:nth-child(even) {
     display: flex;
     flex-direction: row-reverse;
