@@ -549,10 +549,6 @@ form > button {
 }
 
 @media only screen and (min-width: 992px) {
-  .nav__logo {
-    margin-left: 142px;
-  }
-
   .nav .navbar {
     margin-right: 142px;
   }
@@ -761,6 +757,7 @@ form > button {
   .nav__logo {
     animation-duration: 4s;
     animation-name: rotate-logo;
+    margin-left: 142px;
   }
 
   @keyframes rotate-logo {
