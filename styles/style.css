@@ -623,11 +623,11 @@ form > button {
     margin-bottom: 142px;
   }
 
-  .view-project-btn{
-    transition: background-color 1gits, color 1.5s;
+  .view-project-btn {
+    transition: background-color 1s, color 1s;
   }
 
-  .view-project-btn:hover{
+  .view-project-btn:hover {
     background-color: #7f8cff;
     color: #fff;
   }
@@ -701,6 +701,15 @@ form > button {
     display: grid;
     grid-template-columns: 50% 50%;
     padding: 142px;
+  }
+
+  .get-resume-btn {
+    transition: background-color 1s, color 1s;
+  }
+
+  .get-resume-btn:hover {
+    background-color: #7f8cff;
+    color: #fff;
   }
 
   .about-section h1 {
