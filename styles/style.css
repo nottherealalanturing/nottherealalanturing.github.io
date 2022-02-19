@@ -567,6 +567,14 @@ form > button {
     color: #344563;
   }
 
+  .socials-contact {
+    transition: transform 1s;
+  }
+
+  .socials-contact:hover {
+    transform: scale(1.5);
+  }
+
   .nav-button {
     display: none;
   }
