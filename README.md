@@ -144,7 +144,7 @@ Distributed under the MIT License.
 
 ## Contact
 
-Your Name - [@assadeesaa](https://twitter.com/assadeesaa) - nottherealalanturing@gmail.com
+Assad Isah - [@assadeesaa](https://twitter.com/assadeesaa) - nottherealalanturing@gmail.com
 
 Project Link: [https://github.com/nottherealalanturing/Portfolio](https://github.com/nottherealalanturing/Portfolio)
 

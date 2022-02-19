@@ -292,20 +292,11 @@ picture > img {
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  transition-property: background-color, color;
-  transition-duration: 500ms;
 }
 
 .view-project-btn:enabled {
   border: 1px solid #7f8cff;
   box-sizing: border-box;
-}
-
-.view-project-btn:hover {
-  background-color: #6070ff;
-  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
-  color: #fff;
-  cursor: pointer;
 }
 
 .view-project-btn p {
@@ -397,15 +388,6 @@ picture > img {
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  transition-property: background-color, color;
-  transition-duration: 500ms;
-}
-
-.get-resume-btn:hover {
-  background-color: #6070ff;
-  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
-  color: #fff;
-  cursor: pointer;
 }
 
 .skill-list {
@@ -537,6 +519,11 @@ input[type="text"] {
   margin: 20px 0;
 }
 
+input,
+textarea {
+  transition: all 0.4s;
+}
+
 textarea {
   margin-top: 18px;
   margin-bottom: 22px;
@@ -562,10 +549,6 @@ form > button {
 }
 
 @media only screen and (min-width: 992px) {
-  .nav__logo {
-    margin-left: 142px;
-  }
-
   .nav .navbar {
     margin-right: 142px;
   }
@@ -583,6 +566,19 @@ form > button {
     font-size: 15px;
     line-height: 20px;
     color: #344563;
+    transition: all 0.3s;
+  }
+
+  .nav-d__item:hover {
+    font-size: 18px;
+  }
+
+  .socials-contact {
+    transition: transform 1s;
+  }
+
+  .socials-contact:hover {
+    transform: scale(1.5);
   }
 
   .nav-button {
@@ -633,6 +629,15 @@ form > button {
     margin-bottom: 142px;
   }
 
+  .view-project-btn {
+    transition: background-color 1s, color 1s;
+  }
+
+  .view-project-btn:hover {
+    background-color: #7f8cff;
+    color: #fff;
+  }
+
   .portfolio-item:nth-child(even) {
     display: flex;
     flex-direction: row-reverse;
@@ -642,8 +647,13 @@ form > button {
     margin-bottom: 142px;
   }
 
-  picture > img {
+  .portfolio-item__image {
     width: 100%;
+  }
+
+  .portfolio-item__image:hover {
+    transform: scale(1.2);
+    transition: all 1s;
   }
 
   .portfolio-item__card-details {
@@ -699,6 +709,15 @@ form > button {
     padding: 142px;
   }
 
+  .get-resume-btn {
+    transition: background-color 1s, color 1s;
+  }
+
+  .get-resume-btn:hover {
+    background-color: #7f8cff;
+    color: #fff;
+  }
+
   .about-section h1 {
     font-style: normal;
     font-weight: bold;
@@ -719,5 +738,43 @@ form > button {
     padding: 10% 25%;
     border-top-left-radius: 160px;
     background-image: url("../assets/images/footer-bg.svg");
+  }
+
+  form > button {
+    transition: background-color 1s, color 1s;
+  }
+
+  form > button:hover {
+    background-color: #7f8cff;
+    color: #fff;
+  }
+
+  input:hover,
+  textarea:hover {
+    padding-left: 5px;
+  }
+
+  .nav__logo {
+    animation-duration: 4s;
+    animation-name: rotate-logo;
+    margin-left: 142px;
+  }
+
+  @keyframes rotate-logo {
+    from {
+      transform: rotate(0deg);
+    }
+
+    60% {
+      transform: rotate(360deg);
+    }
+
+    90% {
+      transform: scale(2);
+    }
+
+    to {
+      transform: scale(1);
+    }
   }
 }
