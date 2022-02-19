@@ -565,6 +565,11 @@ form > button {
     font-size: 15px;
     line-height: 20px;
     color: #344563;
+    transition: all 0.3s;
+  }
+
+  .nav-d__item:hover {
+    font-size: 18px;
   }
 
   .socials-contact {
