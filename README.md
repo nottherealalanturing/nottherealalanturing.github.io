@@ -26,7 +26,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/nottherealalanturing/Portfolio">
+  <a href="https://nottherealalanturing.github.io/Portfolio/">
     <img src="assets/readme-images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -38,7 +38,7 @@
     <a href="https://github.com/nottherealalanturing/Portfolio"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/nottherealalanturing/Portfolio">View Demo</a>
+    <a href="https://nottherealalanturing.github.io/Portfolio/">View</a>
     ·
     <a href="https://github.com/nottherealalanturing/Portfolio/issues">Report Bug</a>
     ·
@@ -76,7 +76,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://nottherealalanturing.github.io/Portfolio/)
 
 Here's a portfolio I designed with to showcase my works and skills.
 
