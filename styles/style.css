@@ -293,7 +293,6 @@ picture > img {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  font-weight: 600;
 }
 
 .view-project-btn:enabled {
@@ -371,7 +370,6 @@ picture > img {
   box-sizing: border-box;
   text-decoration: none;
   border-radius: 8px;
-  font-weight: 00;
   font-size: 17px;
   line-height: 24px;
 }
