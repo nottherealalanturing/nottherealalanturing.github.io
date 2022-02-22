@@ -59,7 +59,7 @@ body {
   display: flex;
   align-items: center;
   text-align: center;
-  color: #6070ff;
+  color: #0019fc;
   flex: none;
   flex-grow: 0;
   margin: 0;
@@ -131,7 +131,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7f8cff;
+  color: #0019fc;
   margin: 0;
 }
 
@@ -152,7 +152,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   padding: 16px;
-  background: #fff;
+  background: rgb(231, 224, 224);
   border: 1px solid #dfe1e6;
   box-sizing: border-box;
   border-radius: 16px;
@@ -219,7 +219,7 @@ picture > img {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
-  color: #7a869a;
+  color: #333d4e;
   flex: none;
   flex-grow: 0;
   margin: 0;
@@ -230,7 +230,7 @@ picture > img {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
-  color: #7a869a;
+  color: #333d4e;
   flex: none;
   flex-grow: 0;
   margin: 0;
@@ -284,8 +284,8 @@ picture > img {
   align-items: center;
   padding: 12px;
   height: 48px;
-  background-color: #fff;
-  color: #6070ff;
+  background-color: #2036fa;
+  color: #dfdfdf;
   border: 1px solid #7f8cff;
   box-sizing: border-box;
   text-decoration: none;
@@ -293,27 +293,12 @@ picture > img {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  letter-spacing: 0.03em;
+  font-weight: 600;
 }
 
 .view-project-btn:enabled {
   border: 1px solid #7f8cff;
   box-sizing: border-box;
-}
-
-.view-project-btn p {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #396df2;
-  flex: none;
-  flex-grow: 0;
-  margin: 0 10px;
 }
 
 .work-section {
@@ -330,7 +315,7 @@ picture > img {
   background-repeat: no-repeat;
   background-size: cover;
   border-top-right-radius: 80px;
-  background-color: #fff;
+  background-color: rgb(236, 225, 225);
 }
 
 .about-top {
@@ -345,7 +330,7 @@ picture > img {
 
 .about-sec-connect {
   margin-bottom: 12px;
-  color: #7f8cff;
+  color: #0f27ff;
   font-size: 16px;
   line-height: 24px;
   font-weight: normal;
@@ -380,16 +365,15 @@ picture > img {
   align-items: center;
   padding: 12px;
   height: 48px;
-  background-color: #fff;
-  color: #6070ff;
+  background-color: #2036fa;
+  color: #dfdfdf;
   border: 1px solid #7f8cff;
   box-sizing: border-box;
   text-decoration: none;
   border-radius: 8px;
-  font-weight: 500;
+  font-weight: 00;
   font-size: 17px;
   line-height: 24px;
-  letter-spacing: 0.03em;
 }
 
 .skill-list {
@@ -540,13 +524,13 @@ textarea {
 form > button {
   align-self: start;
   padding: 15px 16px;
-  background: #fff;
+  background: rgb(255, 255, 255);
   border-radius: 8px;
-  border: none;
+  border: 1px solid #0019fd;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  color: #6070ff;
+  color: #0019fd;
   margin-bottom: 45px;
 }
 
@@ -636,8 +620,8 @@ form > button {
   }
 
   .view-project-btn:hover {
-    background-color: #7f8cff;
-    color: #fff;
+    background-color: #7f8cff6c;
+    color: rgb(20, 20, 20);
   }
 
   .portfolio-item:nth-child(even) {
@@ -712,12 +696,12 @@ form > button {
   }
 
   .get-resume-btn {
-    transition: background-color 1s, color 1s;
+    transition: background-color 0.5s, color 0.5s;
   }
 
   .get-resume-btn:hover {
-    background-color: #7f8cff;
-    color: #fff;
+    background-color: #3646d6;
+    color: rgb(37, 36, 36);
   }
 
   .about-section h1 {
@@ -743,11 +727,11 @@ form > button {
   }
 
   form > button {
-    transition: background-color 1s, color 1s;
+    transition: background-color 0.5s, color 0.5s;
   }
 
   form > button:hover {
-    background-color: #7f8cff;
+    background-color: #172dfab0;
     color: #fff;
   }
 
