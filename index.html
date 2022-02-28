@@ -11,9 +11,9 @@
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag("js", new Date());
+      gtag('js', new Date());
 
-      gtag("config", "G-GBX2S8PYGM");
+      gtag('config', 'G-GBX2S8PYGM');
     </script>
 
     <meta charset="UTF-8" />
@@ -21,8 +21,25 @@
     <title>Portfolio - Software Developer, Assad</title>
     <link rel="stylesheet" href="./styles/style.css" />
     <script src="./scripts/script.js" defer></script>
+    <script defer>
+      function openNav() {
+        document.getElementById('myNav').style.width = '100%';
+      }
+
+      function closeNav() {
+        document.getElementById('myNav').style.width = '0%';
+      }
+    </script>
   </head>
   <body>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" id="closebtn">&times;</a>
+      <div class="overlay-content">
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
     <div class="container">
       <header class="app-bar">
         <div class="nav">
@@ -40,27 +57,6 @@
         </div>
       </header>
     </div>
-
-    <main class="mobile-menu">
-      <div class="appbar">
-        <button type="button" id="close-menu" class="menu-button">
-          <img src="./assets/Icons/close-btn.svg" alt="Close menu" />
-        </button>
-      </div>
-      <nav id="mobile-nav" class="">
-        <ul>
-          <li class="">
-            <a href="#portfolio" class="header-3 fw-600 color-n0">Portfolio</a>
-          </li>
-          <li class="">
-            <a href="#about" class="header-3 fw-600 color-n0">About</a>
-          </li>
-          <li>
-            <a href="#contact-me" class="header-3 fw-600 color-n0">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </main>
 
     <main class="headline bg--c0">
       <h1>

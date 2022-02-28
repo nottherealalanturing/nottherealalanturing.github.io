@@ -1,6 +1,16 @@
-let hamburger = document.getElementById("nav-button");
-let menu = document.getElementById("menu");
+const hamburger = document.getElementById('nav-button');
+const menu = document.getElementById('menu');
+const navButton = document.getElementById('nav-button');
+const closebtn = document.getElementById('closebtn');
 
-hamburger.addEventListener("click", (event) => {
-  menu.classList.toggle("nav-mobile");
+hamburger.addEventListener('click', (event) => {
+  menu.classList.toggle('nav-mobile');
+});
+
+closebtn.addEventListener('click', () => {
+  document.getElementById('myNav').style.width = '0%';
+});
+
+navButton.addEventListener('click', () => {
+  document.getElementById('myNav').style.width = '100%';
 });
