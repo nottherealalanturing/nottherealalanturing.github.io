@@ -36,11 +36,9 @@ body {
 }
 
 .appbar {
-  position: fixed;
-  width: 100%;
-  left: 0;
-  top: 0;
-  z-index: 4;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
 }
 
 .nav {
@@ -78,8 +76,41 @@ body {
   background-color: red; */
 }
 
-.nav-mobile {
+.mobile-menu {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #6070ff;
+  /* mix-blend-mode: multiply; */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#mobile-nav ul {
   display: flex;
+  flex-direction: column;
+  padding-left: 28px;
+  padding-top: 106px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.menu-button {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+}
+
+.nav-mobile {
+  /* display: flex;   
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
@@ -93,14 +124,14 @@ body {
   gap: 40px;
   background-color: #6070ff;
   mix-blend-mode: multiply;
-  z-index: 0;
+  z-index: 0; */
 }
 
 .nav-d a {
-  color: #fff;
+  /* color: #fff;
   font-weight: 600;
   font-size: 32px;
-  line-height: 44px;
+  line-height: 44px; */
 }
 
 .nav-button {
@@ -563,6 +594,14 @@ form > button {
 @media only screen and (min-width: 992px) {
   .nav .navbar {
     margin-right: 142px;
+  }
+
+  .appbar {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 4;
   }
 
   .nav-d {
