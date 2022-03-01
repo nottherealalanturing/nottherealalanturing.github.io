@@ -1,5 +1,14 @@
 {
+  "scripts": {
+    "lintjs": "npx eslint .",
+    "linthtml": "npx hint .",
+    "lintcss": "npx stylelint \"**/*.{css,scss}\""
+  },
   "devDependencies": {
+    "babel-eslint": "10.x",
+    "eslint": "7.x",
+    "eslint-config-airbnb-base": "14.x",
+    "eslint-plugin-import": "2.x",
     "hint": "6.x",
     "stylelint": "13.x",
     "stylelint-config-standard": "21.x",

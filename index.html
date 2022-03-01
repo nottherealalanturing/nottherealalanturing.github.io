@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Software Developer, Assad</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./scripts/script.js" defer></script>
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-GBX2S8PYGM"
@@ -11,25 +15,29 @@
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag("js", new Date());
+      gtag('js', new Date());
 
-      gtag("config", "G-GBX2S8PYGM");
+      gtag('config', 'G-GBX2S8PYGM');
     </script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio - Software Developer, Assad</title>
-    <link rel="stylesheet" href="./styles/style.css" />
   </head>
-  <body>
-    <div class="container">
+  <body id="body">
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" id="closebtn">&times;</a>
+      <div class="overlay-content" id="overlay-content">
+        <a href="#works">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="container" id="container">
       <header class="app-bar">
         <div class="nav">
           <a href="/" class="nav__logo"> Assad Isah </a>
           <nav class="navbar">
-            <button class="nav-button" type="button">
+            <button class="nav-button" id="nav-button" type="button">
               <img src="./assets/Icons/hamburger-button.svg" alt="more" />
             </button>
-            <ul class="nav-d">
+            <ul id="menu" class="nav-d nav-mobile">
               <li><a href="#works" class="nav-d__item">Portfolio</a></li>
               <li><a href="#about" class="nav-d__item">About</a></li>
               <li><a href="#contact" class="nav-d__item">Contact</a></li>
@@ -39,7 +47,7 @@
       </header>
     </div>
 
-    <main class="headline bg--c0">
+    <main class="headline bg--c0" id="headline">
       <h1>
         I'm Assad, <br />
         Glad to see you!

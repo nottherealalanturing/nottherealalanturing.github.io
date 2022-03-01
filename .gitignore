@@ -1,4 +1,6 @@
 node_modules
 yarn.lock
 hint-report
+.hintrc.json
 .stylelintrc.json
+.eslintrc.json

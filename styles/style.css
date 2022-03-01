@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:regular,bold,500,600&amp;display=swap");
+@import url('https://fonts.googleapis.com/css?family=Poppins:regular,bold,500,600&amp;display=swap');
 
 a,
 li,
@@ -16,7 +16,7 @@ ul {
 }
 
 body {
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
 .mt--24 {
@@ -35,12 +35,53 @@ body {
   max-width: 100vw;
 }
 
-.appbar {
+.blur {
+  filter: blur(16px);
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
   position: fixed;
-  width: 100%;
-  left: 0;
+  z-index: 1;
   top: 0;
-  z-index: 4;
+  left: 0;
+  background-color: rgba(96, 112, 255);
+  background-color: rgba(96, 112, 255, 0.9);
+  mix-blend-mode: multiply;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 106px;
+  padding-left: 28px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 62px;
+  right: 38px;
+  width: 12px;
+  height: 12px;
+}
+
+.appbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
 }
 
 .nav {
@@ -95,7 +136,7 @@ body {
 
 .headline {
   max-height: 604px;
-  background-image: url("../assets//images/hero-mobile.svg");
+  background-image: url('../assets//images/hero-mobile.svg');
   background-position: top right;
   background-size: cover;
   background-repeat: no-repeat;
@@ -450,7 +491,7 @@ picture > img {
 }
 
 .contact-me {
-  background-image: url("../assets/images/contact\ form\ shapes-mobile.svg");
+  background-image: url('../assets/images/contact\ form\ shapes-mobile.svg');
   background-repeat: no-repeat;
   background-position: 100%;
   background-color: #6070ff;
@@ -499,7 +540,7 @@ input {
   line-height: 20px;
 }
 
-input[type="text"] {
+input[type='text'] {
   margin: 20px 0;
 }
 
@@ -537,6 +578,14 @@ form > button {
     margin-right: 142px;
   }
 
+  .appbar {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 4;
+  }
+
   .nav-d {
     display: flex;
     align-items: center;
@@ -570,7 +619,7 @@ form > button {
   }
 
   .headline {
-    background-image: url("../assets//images/hero-desktop.svg");
+    background-image: url('../assets//images/hero-desktop.svg');
     background-position: top right;
     background-size: cover;
     background-repeat: no-repeat;
@@ -721,7 +770,7 @@ form > button {
   .contact-me {
     padding: 10% 25%;
     border-top-left-radius: 160px;
-    background-image: url("../assets/images/footer-bg.svg");
+    background-image: url('../assets/images/footer-bg.svg');
   }
 
   form > button {
