@@ -76,6 +76,7 @@
 
 ## About The Project
 
+[![Product Name Screen Shot][product-screenshot-mobile]](https://nottherealalanturing.github.io/Portfolio/)
 [![Product Name Screen Shot][product-screenshot]](https://nottherealalanturing.github.io/Portfolio/)
 
 Here's a portfolio I designed with to showcase my works and skills.
@@ -174,3 +175,4 @@ Project Link: [https://github.com/nottherealalanturing/Portfolio](https://github
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/assadisah
 [product-screenshot]: assets/readme-images/screenshot.png
+[product-screenshot-mobile]: assets/readme-images/mobile-screen.png
