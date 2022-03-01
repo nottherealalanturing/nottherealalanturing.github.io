@@ -1,8 +1,8 @@
 {
   "scripts": {
-    "eslint": "npx eslint .",
-    "webhint": "npx hint .",
-    "stylelint": "npx stylelint \"**/*.{css,scss}\""
+    "lintjs": "npx eslint .",
+    "linthtml": "npx hint .",
+    "lintcss": "npx stylelint \"**/*.{css,scss}\""
   },
   "devDependencies": {
     "babel-eslint": "10.x",
