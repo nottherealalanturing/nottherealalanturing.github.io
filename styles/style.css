@@ -573,31 +573,6 @@ form > button {
   margin-bottom: 45px;
 }
 
-.p-item-overlay {
-  width: 100vw;
-  height: 100vh;
-  /* mix-blend-mode: multiply; */
-  background-color: #c1c7d0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  /* display: none; */
-}
-.p-item-modal {
-  background-color: #fff;
-  position: fixed;
-  width: 90%;
-  z-index: 10;
-  top: 5%;
-  left: 5%;
-  padding: 30px;
-  display: grid;
-  overflow-y: auto;
-  border: 1px solid #ebecf0;
-  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
-  border-radius: 16px;
-}
-
 .my-modal {
   position: fixed;
   background-color: rgba(255, 255, 255, 0.8);
@@ -618,7 +593,7 @@ form > button {
   padding: 30px;
   display: grid;
   border: 1px solid #ebecf0;
-  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   border-radius: 16px;
 }
 
@@ -633,22 +608,32 @@ form > button {
 }
 
 .p-item_details-1 h5:nth-child(1) {
-  font-family: Poppins;
   font-size: 32px;
   line-height: 44px;
   color: #091e42;
-  margin: 12px 0px;
+  margin: 12px 0;
   font-style: normal;
   font-weight: bold;
 }
 
+.p-item_sl-item a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+}
+
 .p-item_details-1 a:nth-child(2) {
-  font-family: Poppins;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
   color: #091e42;
-  margin: 12px 0px;
+  margin: 12px 0;
 }
 
 .p-item_details-2 {
@@ -724,14 +709,13 @@ form > button {
 }
 
 .p-item_tl-item_text {
-  font-family: Poppins;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
   color: #6070ff;
-  margin: 0px 0px;
+  margin: 0;
 }
 
 .p-item_sl {
@@ -752,19 +736,6 @@ form > button {
   justify-content: center;
   gap: 5px;
   width: 50%;
-}
-
-.p-item_sl-item a {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #6070ff;
 }
 
 .p-item_sl-item img {
@@ -1009,32 +980,30 @@ form > button {
     }
   }
 
-  .p-item-overlay {
-    width: 100%;
-    height: 100%;
-    /* mix-blend-mode: multiply; */
-    background-color: #c1c7d0;
+  .my-modal {
     position: fixed;
+    background-color: rgba(255, 255, 255, 0.8);
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    display: none;
     overflow: auto;
-    /* display: none; */
   }
 
-  .p-item-modal {
-    background-color: #fff;
+  .my-modal-content {
     position: absolute;
+    background-color: #fff;
     width: 70%;
-    z-index: 10;
     top: 10%;
-    left: 15%;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
     padding: 30px;
     display: grid;
-    overflow-y: auto;
     border: 1px solid #ebecf0;
-    box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
     border-radius: 16px;
   }
 
@@ -1048,21 +1017,31 @@ form > button {
     justify-content: space-between;
   }
 
+  .p-item_sl-item a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #6070ff;
+  }
+
   .p-item_details-1 h5:nth-child(1) {
-    font-family: Poppins;
     font-size: 40px;
     line-height: 52px;
     color: #091e42;
-    margin: 12px 0px;
+    margin: 12px 0;
   }
 
   .p-item_details-1 a:nth-child(2) {
-    font-family: Poppins;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
     color: #091e42;
-    margin: 12px 0px;
+    margin: 12px 0;
   }
 
   .p-item_details-2 {
@@ -1141,7 +1120,6 @@ form > button {
   }
 
   .p-item_tl-item_text {
-    font-family: Poppins;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -1170,47 +1148,7 @@ form > button {
     width: 100%;
   }
 
-  .p-item_sl-item a {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #6070ff;
-  }
-
   .p-item_sl-item img {
     width: 12px;
-  }
-
-  .my-modal {
-    position: fixed;
-    background-color: rgba(255, 255, 255, 0.8);
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: none;
-    overflow: auto;
-  }
-
-  .my-modal-content {
-    position: absolute;
-    background-color: #fff;
-    width: 70%;
-    top: 10%;
-    right: 0;
-    left: 0;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 30px;
-    display: grid;
-    border: 1px solid #ebecf0;
-    box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
-    border-radius: 16px;
   }
 }

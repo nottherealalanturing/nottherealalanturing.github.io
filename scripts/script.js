@@ -79,6 +79,12 @@ const portfolioItems = [
   },
 ];
 
+// eslint-disable-next-line no-unused-vars
+const closeModal = () => {
+  body.style.overflow = 'auto';
+  projectModal.style.display = 'none';
+};
+
 function seeProject(project) {
   let techList = '';
   for (let i = 0; i < project.technologies.length; i += 1) {
@@ -90,8 +96,8 @@ function seeProject(project) {
       <h5>${project.title}</h5>
       <a
         href="javascript:void(0)"
-        class="closebtn"
-        onclick="closeProject()"
+        id="closeModal"
+        onclick="closeModal()"
         >&times;</a
       >
     </div>
@@ -140,14 +146,10 @@ function seeProject(project) {
   body.style.overflow = 'hidden';
 }
 
-function closeProject() {
-  body.style.overflow = 'auto';
-  projectModal.style.display = 'none';
-}
-
 /* Porfolio Section */
 /* IIFE loads and populate work section */
 (() => {
+  /* Loads Portfolio Items */
   for (let i = 0; i < portfolioItems.length; i += 1) {
     let techList = '';
     for (let j = 0; j < portfolioItems[i].technologies.length; j += 1) {
@@ -192,8 +194,9 @@ function closeProject() {
     worksSection.innerHTML += articleTemplate;
   }
 
+  /* Add event listener to open Modal */
   for (let i = 0; i < portfolioItems.length; i += 1) {
-    document.querySelector(`.data-item-${i}`).addEventListener('click', (e) => {
+    document.querySelector(`.data-item-${i}`).addEventListener('click', () => {
       seeProject(portfolioItems[i]);
     });
   }
