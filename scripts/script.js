@@ -3,7 +3,9 @@ const navButton = document.getElementById('nav-button');
 const closebtn = document.getElementById('closebtn');
 const mi = document.getElementById('overlay-content').children;
 const menuItems = Array.from(mi);
+const body = document.getElementById('body');
 const worksSection = document.getElementById('works');
+const projectModal = document.getElementById('my-modal');
 
 /* Portofolio Items */
 const portfolioItems = [
@@ -77,6 +79,72 @@ const portfolioItems = [
   },
 ];
 
+function seeProject(project) {
+  let techList = '';
+  for (let i = 0; i < project.technologies.length; i += 1) {
+    techList += `<li class="p-item_tl-item"><p class="p-item_tl-item_text">${project.technologies[i]}</p></li>`;
+  }
+  const projectString = `<div class="my-modal-content">
+  <div class="p-item_details mb--12">
+    <div class="p-item_details-1">
+      <h5>${project.title}</h5>
+      <a
+        href="javascript:void(0)"
+        class="closebtn"
+        onclick="closeProject()"
+        >&times;</a
+      >
+    </div>
+    <div class="p-item_details-2">
+      <p class="project-owner">${project.owner}</p>
+      <img src="./assets/Icons/Counter.svg" alt="seperator" />
+      <p class="project-type">${project.type}</p>
+      <img src="./assets/Icons/Counter.svg" alt="seperator" />
+      <p class="year">${project.year}</p>
+    </div>
+  </div>
+  <img
+    src="./assets/images/${project.featuredImages.mob}"
+    alt="flower"
+    class="p-item-image mb--12"
+  />
+  <div class="p-item_dt mb--12">
+    <p class="p-item_desc">
+    ${project.description}
+    </p>
+    <div class="p-item_tl-container">
+      <ul class="p-item_tl">
+      ${techList}
+      </ul>
+      <ul class="p-item_sl">
+        <li class="p-item_sl-item">
+          <a href="${project.liveLink}" class="p-item_sl-live">See Live</a>
+          <img
+            src="./assets/Icons/live-icon.svg"
+            alt="Live Button icon"
+          />
+        </li>
+        <li class="p-item_sl-item">
+          <a href="${project.sourceLink}" class="p-item_sl-source">See Source</a>
+          <img
+            src="./assets/Icons/source-icon.svg"
+            alt="See Source Icon"
+          />
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>`;
+  projectModal.innerHTML += projectString;
+  projectModal.style.display = 'block';
+  body.style.overflow = 'hidden';
+}
+
+function closeProject() {
+  body.style.overflow = 'auto';
+  projectModal.style.display = 'none';
+}
+
 /* Porfolio Section */
 /* IIFE loads and populate work section */
 (() => {
@@ -117,11 +185,17 @@ const portfolioItems = [
     ${techList}
       </ul>
       <div class="btn-container">
-        <button type="button" class="view-project-btn">See Project</button>
+        <button type="button" class="view-project-btn data-item-${i}">See Project</button>
       </div>
     </div>
   </article>`;
     worksSection.innerHTML += articleTemplate;
+  }
+
+  for (let i = 0; i < portfolioItems.length; i += 1) {
+    document.querySelector(`.data-item-${i}`).addEventListener('click', (e) => {
+      seeProject(portfolioItems[i]);
+    });
   }
 })();
 
