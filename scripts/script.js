@@ -7,9 +7,9 @@ const body = document.getElementById('body');
 const worksSection = document.getElementById('works');
 const projectModal = document.getElementById('my-modal');
 const form = document.querySelector('.contact-form');
-let emailForm = document.getElementById('email');
-let nameForm = document.getElementById('fullname');
-let messageForm = document.getElementById('message');
+const emailForm = document.getElementById('email');
+const nameForm = document.getElementById('fullname');
+const messageForm = document.getElementById('message');
 const validationMessage = document.querySelector('.validation-message');
 
 /* Portofolio Items */
