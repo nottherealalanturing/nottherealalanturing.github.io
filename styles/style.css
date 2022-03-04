@@ -1145,7 +1145,7 @@ form > button {
     display: flex;
     align-items: center;
     gap: 5px;
-    width: 100%;
+    width: 140px;
   }
 
   .p-item_sl-item img {
