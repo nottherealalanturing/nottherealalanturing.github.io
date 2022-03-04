@@ -208,6 +208,7 @@ function seeProject(project) {
 /* Form Validation Email */
 form.addEventListener('submit', (event) => {
   const strInput = email.value;
+  // eslint-disable-next-line operator-linebreak
   const errorText =
     'Your email address should not contain upper case letters or invalid characters';
   if (/[A-Z]/.test(strInput)) {
@@ -215,10 +216,6 @@ form.addEventListener('submit', (event) => {
     validationMessage.innerHTML = errorText;
     validationMessage.classList.add('shake');
   }
-});
-
-email.addEventListener('input', () => {
-  email.value = email.value.toLowerCase();
 });
 
 /* Mobile Menu */
