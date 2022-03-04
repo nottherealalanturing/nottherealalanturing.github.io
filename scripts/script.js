@@ -7,7 +7,9 @@ const body = document.getElementById('body');
 const worksSection = document.getElementById('works');
 const projectModal = document.getElementById('my-modal');
 const form = document.querySelector('.contact-form');
-const email = document.getElementById('email');
+let emailForm = document.getElementById('email');
+let nameForm = document.getElementById('fullname');
+let messageForm = document.getElementById('message');
 const validationMessage = document.querySelector('.validation-message');
 
 /* Portofolio Items */
@@ -207,7 +209,7 @@ function seeProject(project) {
 
 /* Form Validation Email */
 form.addEventListener('submit', (event) => {
-  const strInput = email.value;
+  const strInput = emailForm.value;
   // eslint-disable-next-line operator-linebreak
   const errorText =
     'Your email address should not contain upper case letters or invalid characters';
@@ -217,6 +219,22 @@ form.addEventListener('submit', (event) => {
     validationMessage.classList.add('shake');
   }
 });
+
+/* Persist form input across page reloads */
+
+form.addEventListener('input', () => {
+  const formdata = {
+    name: nameForm.value,
+    email: emailForm.value,
+    message: messageForm.value,
+  };
+  localStorage.setItem('form', JSON.stringify(formdata));
+});
+
+const formObj = JSON.parse(localStorage.getItem('form'));
+nameForm.value = formObj.name;
+emailForm.value = formObj.email;
+messageForm.value = formObj.message;
 
 /* Mobile Menu */
 menuItems.forEach((li) => {
