@@ -6,6 +6,9 @@ const menuItems = Array.from(mi);
 const body = document.getElementById('body');
 const worksSection = document.getElementById('works');
 const projectModal = document.getElementById('my-modal');
+const form = document.querySelector('.contact-form');
+const email = document.getElementById('email');
+const validationMessage = document.querySelector('.validation-message');
 
 /* Portofolio Items */
 const portfolioItems = [
@@ -201,6 +204,22 @@ function seeProject(project) {
     });
   }
 })();
+
+/* Form Validation Email */
+form.addEventListener('submit', (event) => {
+  const strInput = email.value;
+  const errorText =
+    'Your email address should not contain upper case letters or invalid characters';
+  if (/[A-Z]/.test(strInput)) {
+    event.preventDefault();
+    validationMessage.innerHTML = errorText;
+    validationMessage.classList.add('shake');
+  }
+});
+
+email.addEventListener('input', () => {
+  email.value = email.value.toLowerCase();
+});
 
 /* Mobile Menu */
 menuItems.forEach((li) => {
