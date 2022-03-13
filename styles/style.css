@@ -307,6 +307,7 @@ picture > img {
 .tech-tags__name {
   float: left;
   margin-right: 10px;
+  margin-top: 5px;
   border-radius: 8px;
   background-color: #ebebff;
   padding: 4px 12px;
@@ -317,6 +318,20 @@ picture > img {
   flex: none;
   flex-grow: 0;
   margin: 12px 0;
+}
+
+.showImages {
+  display: flex;
+  gap: 10px;
+  height: 50%;
+}
+
+.showImages img:nth-child(1) {
+  flex: 3 1 auto;
+}
+
+.showImages img:nth-child(1) {
+  flex: 1 3 auto;
 }
 
 .view-project-btn {
