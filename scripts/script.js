@@ -76,8 +76,8 @@ const portfolioItems = [
       'Contentful',
       'Graphql',
     ],
-    liveLink: 'https://nottherealalanturing.github.io/Portfolio/',
-    sourceLink: 'https://nottherealalanturing.github.io/Portfolio/',
+    liveLink: 'https://nottherealalanturing.github.io/old-portfolio/',
+    sourceLink: 'https://nottherealalanturing.github.io/old-portfolio/',
   },
 ];
 

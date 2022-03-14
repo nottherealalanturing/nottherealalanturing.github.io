@@ -498,16 +498,6 @@ picture > img {
   width: 50%;
 }
 
-.showImages {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-.showImages img:nth-child(1) {
-  width: 100%;
-}
-
 .active {
   display: block;
 }
@@ -828,6 +818,16 @@ form > button {
 
 .p-item_sl-item img {
   width: 12px;
+}
+
+.showImages {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.showImages img:nth-child(1) {
+  width: 100%;
 }
 
 @media only screen and (min-width: 800px) {
