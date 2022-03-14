@@ -15,72 +15,69 @@ const validationMessage = document.querySelector('.validation-message');
 /* Portofolio Items */
 const portfolioItems = [
   {
-    title: 'Tonic',
-    owner: 'Canopy',
-    type: 'Back End Dev',
-    year: 2015,
+    title: 'Kramerica Industries',
+    owner: 'Assad Isah',
+    type: 'FrontEnd Dev',
+    year: 2022,
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      'A company website for the fictional Kramerica Indutries from seinfeld.',
     featuredImages: {
-      mob: 'tonic-mob.png',
-      desk: 'tonic-dsk.png',
-      def: 'tonic.png',
-      altText: 'Flowers',
-    },
-    technologies: ['hmtl', 'css', 'javascript', 'BootStrap'],
-    liveLink: 'https://nottherealalanturing.github.io/Portfolio/',
-    sourceLink: 'https://nottherealalanturing.github.io/Portfolio/',
-  },
-  {
-    title: 'Multi-Post Stories',
-    owner: 'Canopy',
-    type: 'Back End Dev',
-    year: 2015,
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    featuredImages: {
-      mob: 'multi-mob.png',
-      desk: 'multi-dsk.png',
-      def: 'multi-dsk.png',
-      altText: 'Flowers',
+      mob: 'KramericaIndustriesMob.png',
+      desk: 'KramericaIndustriesDesk.png',
+      def: 'KramericaIndustriesDesk.png',
+      altText: 'KramericaIndustries',
     },
     technologies: ['hmtl', 'css', 'javascript'],
-    liveLink: 'https://nottherealalanturing.github.io/Portfolio/',
-    sourceLink: 'https://nottherealalanturing.github.io/Portfolio/',
+    liveLink: 'https://nottherealalanturing.github.io/KramericaIndustries/',
+    sourceLink: 'https://github.com/nottherealalanturing/KramericaIndustries',
   },
   {
-    title: 'Facebook 360',
-    owner: 'Facebook',
-    type: 'FullStack Dev',
-    year: 2015,
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    title: 'Sparkles',
+    owner: 'Idayat Musa',
+    type: 'Front End Dev',
+    year: 2021,
+    description: 'A personal blog.',
     featuredImages: {
-      mob: 'facebook360-mob.png',
-      desk: 'facebook360-dsk.png',
-      def: 'facebook360-dsk.png',
-      altText: 'Flowers',
+      mob: 'sparklesMob.png',
+      desk: 'sparklesDesk.png',
+      def: 'sparklesDesk.png',
+      altText: 'sparkles',
     },
-    technologies: ['hmtl', 'css', 'javascript'],
-    liveLink: 'https://nottherealalanturing.github.io/Portfolio/',
-    sourceLink: 'https://nottherealalanturing.github.io/Portfolio/',
+    technologies: [
+      'React',
+      'GatsbyJs',
+      'Javascript',
+      'Chakraui',
+      'Markdowns',
+      'Contentful',
+      'Graphql',
+    ],
+    liveLink: 'https://sparkles.gatsbyjs.io/',
+    sourceLink: 'https://github.com/nottherealalanturing/sparkles',
   },
   {
-    title: 'Uber Navigation',
-    owner: 'Uber',
-    type: 'Lead Developer',
-    year: 2018,
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    title: 'Portfolio',
+    owner: 'Assad Isah',
+    type: 'Front End Dev',
+    year: 2021,
+    description: 'My Portfolio, first draft.',
     featuredImages: {
-      mob: 'uber-mob.png',
-      desk: 'uber-dsk.png',
-      def: 'uber-dsk.png',
-      altText: 'Flowers',
+      mob: 'portfolioMob.png',
+      desk: 'portfolioDesk.png',
+      def: 'portfolioDesk.png',
+      altText: 'Portfolio site',
     },
-    technologies: ['hmtl', 'css', 'javascript'],
-    liveLink: 'https://nottherealalanturing.github.io/Portfolio/',
-    sourceLink: 'https://nottherealalanturing.github.io/Portfolio/',
+    technologies: [
+      'React',
+      'GatsbyJs',
+      'Javascript',
+      'Chakraui',
+      'Markdowns',
+      'Contentful',
+      'Graphql',
+    ],
+    liveLink: 'https://nottherealalanturing.github.io/old-portfolio/',
+    sourceLink: 'https://nottherealalanturing.github.io/old-portfolio/',
   },
 ];
 
@@ -114,11 +111,14 @@ function seeProject(project) {
       <p class="year">${project.year}</p>
     </div>
   </div>
+  <div class="showImages">
   <img
-    src="./assets/images/${project.featuredImages.mob}"
+    src="./assets/images/${project.featuredImages.desk}"
     alt="flower"
     class="p-item-image mb--12"
   />
+  
+  </div>
   <div class="p-item_dt mb--12">
     <p class="p-item_desc">
     ${project.description}
@@ -218,6 +218,7 @@ form.addEventListener('submit', (event) => {
     validationMessage.innerHTML = errorText;
     validationMessage.classList.add('shake');
   }
+  localStorage.removeItem('form');
 });
 
 /* Persist form input across page reloads */

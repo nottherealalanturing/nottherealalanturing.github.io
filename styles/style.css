@@ -104,6 +104,22 @@ body {
   flex: none;
   flex-grow: 0;
   margin: 0;
+  animation-duration: 2s;
+  animation-name: rotate-logo;
+}
+
+@keyframes rotate-logo {
+  from {
+    transform: scale(2);
+  }
+
+  50% {
+    transform: scale(0.5);
+  }
+
+  to {
+    transform: scale(1);
+  }
 }
 
 .navbar {
@@ -307,6 +323,7 @@ picture > img {
 .tech-tags__name {
   float: left;
   margin-right: 10px;
+  margin-top: 5px;
   border-radius: 8px;
   background-color: #ebebff;
   padding: 4px 12px;
@@ -343,7 +360,7 @@ picture > img {
 .work-section {
   display: grid;
   grid-template-columns: auto;
-  padding: 114px 24px;
+  padding: 114px 10%;
   justify-content: center;
 }
 
@@ -649,7 +666,7 @@ form > button {
   position: absolute;
   background-color: #fff;
   width: 90%;
-  top: 2%;
+  top: 10%;
   left: 5%;
   padding: 30px;
   display: grid;
@@ -803,6 +820,16 @@ form > button {
   width: 12px;
 }
 
+.showImages {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.showImages img:nth-child(1) {
+  width: 100%;
+}
+
 @media only screen and (min-width: 800px) {
   .nav .navbar {
     margin-right: 142px;
@@ -880,7 +907,7 @@ form > button {
 
   .work-section {
     justify-content: center;
-    padding: 114px 24px;
+    padding: 114px 10%;
   }
 
   .portfolio-item:nth-child(odd) {
@@ -1018,22 +1045,18 @@ form > button {
   }
 
   .nav__logo {
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-name: rotate-logo;
-    margin-left: 142px;
+    margin-left: 10%;
   }
 
   @keyframes rotate-logo {
     from {
-      transform: rotate(0deg);
-    }
-
-    60% {
-      transform: rotate(360deg);
-    }
-
-    90% {
       transform: scale(2);
+    }
+
+    50% {
+      transform: scale(0.5);
     }
 
     to {
@@ -1055,8 +1078,8 @@ form > button {
   .my-modal-content {
     position: absolute;
     background-color: #fff;
-    width: 70%;
-    top: 10%;
+    width: 60%;
+    top: 5%;
     right: 0;
     left: 0;
     margin-right: auto;
@@ -1143,7 +1166,7 @@ form > button {
 
   .p-item_dt {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 12px 0;
     gap: 10px;
   }
@@ -1193,7 +1216,7 @@ form > button {
   .p-item_sl {
     clear: both;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     gap: 10px;
   }
 
@@ -1211,5 +1234,14 @@ form > button {
 
   .p-item_sl-item img {
     width: 12px;
+  }
+
+  .showImages {
+    display: flex;
+    gap: 10px;
+  }
+
+  .showImages img:nth-child(1) {
+    width: 80%;
   }
 }
