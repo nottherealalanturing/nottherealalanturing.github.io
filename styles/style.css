@@ -336,20 +336,6 @@ picture > img {
   margin: 12px 0;
 }
 
-.showImages {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-.showImages img:nth-child(1) {
-  width: 100%;
-}
-
-.showImages img:nth-child(1) {
-  width: 100%;
-}
-
 .view-project-btn {
   display: flex;
   align-items: center;
@@ -510,6 +496,16 @@ picture > img {
   display: flex;
   justify-content: space-between;
   width: 50%;
+}
+
+.showImages {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.showImages img:nth-child(1) {
+  width: 100%;
 }
 
 .active {
@@ -993,19 +989,6 @@ form > button {
     margin: 24px 0;
   }
 
-  .showImages {
-    display: flex;
-    gap: 10px;
-  }
-
-  .showImages img:nth-child(1) {
-    width: 80%;
-  }
-
-  .showImages img:nth-child(1) {
-    width: 80%;
-  }
-
   .btn-container {
     margin-top: 52px;
   }
@@ -1251,5 +1234,14 @@ form > button {
 
   .p-item_sl-item img {
     width: 12px;
+  }
+
+  .showImages {
+    display: flex;
+    gap: 10px;
+  }
+
+  .showImages img:nth-child(1) {
+    width: 80%;
   }
 }
