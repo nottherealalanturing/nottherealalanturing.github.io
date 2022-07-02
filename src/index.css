@@ -8,6 +8,13 @@
   box-sizing: border-box;
 }
 
+a,
+li,
+ul {
+  text-decoration: none;
+  list-style-type: none;
+}
+
 body {
   margin: 0;
   font-family:
