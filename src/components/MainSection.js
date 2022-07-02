@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaTwitter, FaLinkedin, FaMediumM, FaGithub, FaAngellist } from 'react-icons/fa';
 import styles from './styles/MainSection.module.css';
 
 const MainSection = () => (
@@ -16,30 +17,30 @@ const MainSection = () => (
     <a href="#contact" className={styles.socials}>
       LET&apos;S CONNECT
     </a>
-    <ul className="socials-icons mt--24 mb--12">
-      <li className="twitter-icon">
+    <ul className={styles.socialsIcons}>
+      <li>
         <a title="twitter" href="https://twitter.com/assadeesaa">
-          <img src="./assets//Icons/twitter.svg" alt="twitter-icon" />
+          <FaTwitter className={styles.icons} />
         </a>
       </li>
-      <li className="linkedin-icon">
+      <li>
         <a title="linkedin" href="https://www.linkedin.com/in/assadisah/">
-          <img src="./assets//Icons/linkedin.svg" alt="Linkedin Icon" />
+          <FaLinkedin className={styles.icons} />
         </a>
       </li>
-      <li className="medium-icon">
-        <a title="medium" href="/">
-          <img src="./assets/Icons/medium.svg" alt="medium icon" />
+      <li>
+        <a title="medium" href="https://medium.com/@nottherealalanturing">
+          <FaMediumM className={styles.icons} />
         </a>
       </li>
-      <li className="github-icon">
+      <li>
         <a title="github" href="https://github.com/nottherealalanturing">
-          <img src="./assets/Icons/github.svg" alt="github icon" />
+          <FaGithub className={styles.icons} />
         </a>
       </li>
-      <li className="angel-icon">
-        <a title="angel" href="/">
-          <img src="./assets/Icons/angel-list.svg" alt="angel icon" />
+      <li>
+        <a title="angel" href="https://angel.co/u/nottherealalanturing">
+          <FaAngellist className={styles.icons} />
         </a>
       </li>
     </ul>
