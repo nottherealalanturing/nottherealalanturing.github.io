@@ -1,8 +1,9 @@
 import React from 'react';
+import styles from './styles/ContactSection.module.css';
 
 const ContactSection = () => (
-  <section className="contact-section" id="contact">
-    <section className="contact-me">
+  <section className={styles.contactSection} id="contact">
+    <div className={styles.contactContainer}>
       <h2>Contact me</h2>
       <p>
         If you have an application you are interested in developing, a feature that you need built
@@ -30,7 +31,7 @@ const ContactSection = () => (
         <p className="validation-message" />
         <button type="submit">Get In Touch</button>
       </form>
-    </section>
+    </div>
   </section>
 );
 
