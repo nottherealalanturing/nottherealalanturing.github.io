@@ -1,7 +1,5 @@
 import React from 'react';
-import {
-  FaTwitter, FaLinkedin, FaMediumM, FaGithub, FaAngellist,
-} from 'react-icons/fa';
+import { FaTwitter, FaLinkedin, FaMediumM, FaGithub, FaAngellist } from 'react-icons/fa';
 import styles from './styles/MainSection.module.css';
 
 const MainSection = () => (
@@ -21,27 +19,47 @@ const MainSection = () => (
     </a>
     <ul className={styles.socialsIcons}>
       <li>
-        <a title="twitter" href="https://twitter.com/assadeesaa">
+        <a title="twitter" target="_blank" rel="noreferrer" href="https://twitter.com/assadeesaa">
           <FaTwitter className={styles.icons} />
         </a>
       </li>
       <li>
-        <a title="linkedin" href="https://www.linkedin.com/in/assadisah/">
+        <a
+          title="linkedin"
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.linkedin.com/in/assadisah/"
+        >
           <FaLinkedin className={styles.icons} />
         </a>
       </li>
       <li>
-        <a title="medium" href="https://medium.com/@nottherealalanturing">
+        <a
+          title="medium"
+          target="_blank"
+          rel="noreferrer"
+          href="https://medium.com/@nottherealalanturing"
+        >
           <FaMediumM className={styles.icons} />
         </a>
       </li>
       <li>
-        <a title="github" href="https://github.com/nottherealalanturing">
+        <a
+          title="github"
+          target="_blank"
+          rel="noreferrer"
+          href="https://github.com/nottherealalanturing"
+        >
           <FaGithub className={styles.icons} />
         </a>
       </li>
       <li>
-        <a title="angel" href="https://angel.co/u/nottherealalanturing">
+        <a
+          title="angel"
+          target="_blank"
+          rel="noreferrer"
+          href="https://angel.co/u/nottherealalanturing"
+        >
           <FaAngellist className={styles.icons} />
         </a>
       </li>
