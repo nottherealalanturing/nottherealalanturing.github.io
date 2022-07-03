@@ -1,12 +1,13 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import styles from './styles/ContactSection.module.css';
 
 const ContactSection = () => {
-  const [email, setEmail] = useState();
+  const [form, setForm] = useState({ name: '', email: '', message: '' });
   const validationMessage = useRef();
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    const { email } = form;
     const errorText =
       'Your email address should not contain upper case letters or invalid characters';
     if (/[A-Z]/.test(email)) {
@@ -15,6 +16,28 @@ const ContactSection = () => {
     }
     localStorage.removeItem('form');
   };
+
+  const handlePersist = () => {
+    const { name, email, message } = form;
+    const formdata = {
+      name,
+      email,
+      message,
+    };
+    localStorage.setItem('form', JSON.stringify(formdata));
+  };
+
+  const handleInput = (event) => {
+    const { value } = event.target;
+    const { name } = event.target;
+    setForm((prevState) => ({ ...prevState, [name]: value }));
+    handlePersist();
+  };
+
+  useEffect(() => {
+    const formObj = JSON.parse(localStorage.getItem('form'));
+    if (formObj) setForm({ name: formObj.name, email: formObj.email, message: formObj.message });
+  }, []);
 
   return (
     <section className={styles.contactSection} id="contact">
@@ -32,11 +55,13 @@ const ContactSection = () => {
         >
           <input
             type="text"
-            name="fullname"
+            name="name"
             id="fullname"
             placeholder="Your Name"
             maxLength="30"
             required
+            value={form.name}
+            onChange={(e) => handleInput(e)}
           />
           <input
             type="email"
@@ -44,7 +69,8 @@ const ContactSection = () => {
             id="email"
             placeholder="example@email.com"
             required
-            onChange={(e) => setEmail(e.target.value)}
+            value={form.email}
+            onChange={(e) => handleInput(e)}
           />
           <textarea
             name="message"
@@ -54,6 +80,8 @@ const ContactSection = () => {
             placeholder="Write your message here"
             maxLength="500"
             required
+            value={form.message}
+            onChange={(e) => handleInput(e)}
           />
           <p className="validation-message" ref={validationMessage} />
           <button type="submit">Get In Touch</button>
