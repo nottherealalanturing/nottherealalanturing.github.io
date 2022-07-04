@@ -1,10 +1,11 @@
 import React from 'react';
-import { Main, Navbar, Contact } from './components';
+import { Main, Navbar, Contact, About } from './components';
 
 const App = () => (
   <div>
     <Navbar />
     <Main />
+    <About />
     <Contact />
   </div>
 );
