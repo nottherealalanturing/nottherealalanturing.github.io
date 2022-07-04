@@ -6,12 +6,13 @@ const ContactSection = () => {
   const validationMessage = useRef();
 
   const handleSubmit = (event) => {
-    event.preventDefault();
     const { email } = form;
-    const errorText = 'Your email address should not contain upper case letters or invalid characters';
+    const errorText =
+      'Your email address should not contain upper case letters or invalid characters';
     if (/[A-Z]/.test(email)) {
       validationMessage.current.innerHTML = errorText;
       validationMessage.current.classList.add('shake');
+      event.preventDefault();
     }
     localStorage.removeItem('form');
   };

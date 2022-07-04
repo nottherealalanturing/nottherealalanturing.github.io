@@ -22,13 +22,13 @@ const Navbar = () => {
         <HiOutlineMenuAlt3 className={styles.hamburgerMob} onClick={() => setShow(true)} />
       </nav>
       <div
-        className={styles.overlayMob}
+        className="overlayMob"
         style={{
-          width: show ? '100%' : '0',
+          width: show ? '100%' : '0%',
         }}
       >
-        <MdOutlineClose className={styles.closebtn} onClick={() => setShow(false)} />
-        <ul className={styles.overlayContentMob}>
+        <MdOutlineClose className="closebtn" onClick={() => setShow(false)} />
+        <ul className="overlayContentMob">
           <a href="#works" onClick={() => setShow(false)}>
             Portfolio
           </a>
