@@ -38,6 +38,45 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
+.overlayMob {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(96, 112, 255);
+  background-color: rgba(96, 112, 255, 0.9);
+  mix-blend-mode: multiply;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlayContentMob {
+  position: relative;
+  top: 106px;
+  padding-left: 28px;
+}
+
+.overlayMob a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlayMob .closebtn {
+  position: absolute;
+  top: 62px;
+  right: 38px;
+  width: 30px;
+  height: 30px;
+}
+
 .validation-message {
   font-style: normal;
   color: #f00;
