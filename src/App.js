@@ -1,5 +1,7 @@
 import React from 'react';
-import { Main, Navbar, Contact, About } from './components';
+import {
+  Main, Navbar, Contact, About,
+} from './components';
 
 const App = () => (
   <div>

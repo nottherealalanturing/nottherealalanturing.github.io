@@ -1,5 +1,8 @@
 import React from 'react';
-import { FaTwitter, FaLinkedin, FaMediumM, FaGithub, FaAngellist } from 'react-icons/fa';
+import {
+  FaTwitter, FaLinkedin, FaMediumM, FaGithub, FaAngellist,
+} from 'react-icons/fa';
+import { FiChevronDown, FiChevronRight } from 'react-icons/fi';
 import styles from './styles/AboutSection.module.css';
 
 const AboutSection = () => (
@@ -81,7 +84,7 @@ const AboutSection = () => (
       <li className="skill-list__li">
         <a className="accordion" href="#languages">
           <h3>Languages</h3>
-          <img src="./assets/Icons/chevron-down.svg" alt="down" />
+          <FiChevronDown />
         </a>
         <ul className="panel active">
           <li className="skill-item">
@@ -105,17 +108,17 @@ const AboutSection = () => (
       <li className="skill-list__li">
         <a className="accordion" href="#framework">
           <h3>Framework</h3>
-          <img src="./assets/Icons/chevron-right.svg" alt="down" />
+          <FiChevronRight />
         </a>
-        <ul className="panel"></ul>
+        <ul className="panel" />
       </li>
 
       <li className="skill-list__li">
         <a className="accordion" href="#skills">
           <h3>Skills</h3>
-          <img src="./assets/Icons/chevron-right.svg" alt="down" />
+          <FiChevronDown />
         </a>
-        <ul className="panel"></ul>
+        <ul className="panel" />
       </li>
     </ul>
   </section>
